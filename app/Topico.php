@@ -10,8 +10,7 @@ class Topico extends Model
     protected $fillable = ['titulo', 'imagen','descripcion','acciones','tags','views'];
 
     public function categorias() {
-
-        return $this->hasMany('App\Categorias');
-
-    }
+    	
+        return $this->belongsTo('App\Categorias');
+    }​
 }

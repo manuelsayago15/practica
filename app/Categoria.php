@@ -8,7 +8,10 @@ class Categoria extends Model
 {
     protected $table = 'Categorias';
     protected $fillable = ['nombre'];
+
     public function topico() {
-        return $this->belongsTo('App\Topico');
-    }​
+
+        return $this->hasMany('App\Topico');
+
+    }
 }
