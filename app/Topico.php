@@ -11,6 +11,6 @@ class Topico extends Model
 
     public function categorias() {
     	
-        return $this->belongsTo('App\Categorias');
+        return $this->belongsTo('App\Categorias', 'id');
     }​
 }

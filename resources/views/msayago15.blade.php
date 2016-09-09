@@ -17,7 +17,25 @@
 
 	<tbody>
 
-		
+	@foreach($topicos as $topico)
+
+		<tr>
+
+			<td>{{ $topico->id }}</td>
+
+			<td>{{ $topico->titulo }} </td>
+
+			<td>{{ $topico->descripcion }} </td>
+			
+			<td>{{ $topico->acciones }} </td>
+			
+			<td>{{ $topico->tags }} </td>
+
+		</tr>
+
+​
+
+	@endforeach
 
 	
 

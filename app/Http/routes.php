@@ -1,8 +1,9 @@
 <?php
 
-Route::get('/topicos',function(){
-	return
-}
+Route::get('/topicos',[
+	'as' => 'topicos',
+	'uses' => 'TopicoController@index'
+]);
 
 Route::get('/categorias',[
 	'as' => 'categorias.index',
